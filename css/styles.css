@@ -43,6 +43,42 @@ body {
   max-height: 4em;
 }
 
+
+/* Nuevo Nav */
+
+.navbar-collapse{
+  
+}
+
+/* .navbar-nav .nav-item a{
+  position: relative;
+  font-size: 1.1em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+} */
+
+/* .navbar-nav .nav-item a::after {
+  content: '';
+  left: 0;
+  position: absolute;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .5s;
+} */
+
+
+/* .navbar-nav .nav-item a:hover::after{
+  transform-origin: left;
+  transform: scaleX(1);
+} */
+
 /* -------------------------------------Nav--------------------------------------------- */
 
 nav.navigation {
@@ -150,7 +186,7 @@ nav.navigation {
 }
 
 .content div button {
-  width: 200px;
+  width: 220px;
   padding: 15px 0;
   text-align: center;
   margin: 20px 20px;

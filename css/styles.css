@@ -350,7 +350,7 @@ body {
 
 
 .wrapper-nosotros .container img{
-  width: 90%;
+  width: 88%;
   object-fit: cover;
   border-radius: 5px;
   opacity: 0.9;
@@ -735,7 +735,7 @@ body {
     margin-top: 5px;
     padding-bottom: 3em;
     background-size:auto;
-    background-image: linear-gradient(rgba(0,0,0,0.15),rgba(0, 0, 0, 0.082)),url(/img/banner2.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.15),rgba(0, 0, 0, 0.082)),url(../img/banner2.jpg);
   }
 
 

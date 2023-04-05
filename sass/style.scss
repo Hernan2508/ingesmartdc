@@ -1,4 +1,12 @@
+@import "index";
+@import "nosotros";
+@import "productos";
+@import "servicios";
+@import "contactos";
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins&display=swap');
+
+
+/* Estilos Generales */
 
 * {
     margin: 0;
@@ -88,72 +96,6 @@ header {
     .btn:hover {
       background: #fff;
       color: #162938
-    }
-
-}
-
-
-/* -------------------------------------Content--------------------------------------------- */
-
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 2.7em 0; /* con este parametro para mover el footer */
-  color: #fff;
-
-    img {
-    width: 275px;
-    height: auto;
-    }
-    
-    h1 {
-      font-size: 40px;
-      }
-
-    p {
-      margin-top: 1.5%  ;
-      font-weight: 100;
-      line-height: 25px;
-      color: #ffffffa2;
-      margin-bottom: 0.8%;
-      }
-
-    div button {
-      width: 220px;
-      padding: 15px 0;
-      text-align: center;
-      margin: 20px 20px;
-      border-radius: 25px;
-      font-weight: bold;
-      border: 2px solid #009688;
-      background: transparent;
-      color: #fff;
-      cursor: pointer;
-      position: relative;
-      overflow: hidden;
-
-          span{
-            background: #009688;
-            height: 100%;
-            width: 0%;
-            border-radius: 25px;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            transition: 0.5s;
-            z-index: -1;
-            }  
-    }
-
-    div button:hover span{
-       width: 100%;
-    }
-
-    div button:hover{
-      border: none;
     }
 
 }
@@ -348,397 +290,71 @@ header {
 
 
 
-/* ----------------------------------Página Sobre Nosotros --------------------------------- */
-
-.wrapper-nosotros .container{
-  margin-top: 1.4%;
-  margin-bottom: 1.4%;
-  max-width: 85%;
-  background-color: rgba(54, 79, 100, 0.384);
-  padding: 4.87%;
-
-
-    .col {
-      align-self: center;
-      align-items: center;
-
-          img {
-            width: 85%;
-            object-fit: cover;
-            border-radius: 5px;
-            opacity: 0.9;
-            filter: grayscale(20%);
-            box-shadow: 12px 12px 15px #18294d60; 
-            }
-
-          h1 {
-            font-size: 2.8em;
-            color: white;
-          }
-              
-          p {
-            margin-top: 1.5em;
-            font-size: 1em;
-            padding: 10px 0px;
-            color: white;
-            margin-bottom: 2em;
-          }
-
-          a {
-            text-decoration: none;
-            padding: 12px;
-            border: 2px solid #162938;
-            background-color: #162938;
-            color: white;
-            font-size: 1em;
-            border-radius: 5px;
-            justify-self: center;
-          }
-          
-          a:hover {
-            background-color: rgba(27, 27, 27, 0.925);
-            color: white;
-            border: 2px solid rgba(27, 27, 27, 0.925);
-            transition: 0.3s all ease-in-out;
-          }
-
-    }
-
-}
-
-
-/* ----------------------------------Página Sobre Productos --------------------------------- */
-
-.catalogo-productos {
-  justify-items: center;
-  display: grid;
-
-    .descripcion {
-      text-align: center;
-      margin-top: 2%;
-      max-width: 80%;
-      
-          h1 {
-            color: #fff;
-            font-weight: bold;
-          }
-
-          p {
-            color: #ffffffda;
-            margin-top: 1.5%;
-            margin-bottom: 1.2%;
-            font-size: 1.1em;
-          }
-
-    }
-
-    .card-group {
-      background-color: rgba(54, 79, 100, 0.384);
-      padding: 1.2%;
-      margin-left: 10%;
-      margin-right: 10%;
-      margin-top: 1.0%;
-      margin-bottom: 1.8%;
-
-          .card {
-            color: #fff;
-            background-color: rgba(11, 44, 70, 0.774);
-            border: 1px solid #ccc;
-            align-items: center;
-            padding: 1%;
-
-              .card-body {
-                text-align: center;
-
-                  .card-title{
-                    text-align: center;
-                    font-weight: bold;
-                    margin-bottom: 10%;
-                    font-size: 1.0em;
-                  }
-
-                  .card-text{
-                    color:#ffffff71;
-                    font-size: 0.90em;
-                    text-align:justify;
-                  }
-
-                  .price{
-                    color:#007bff;
-                    font-size: 1.10em;
-                    font-weight: bolder;
-                    text-align: center;
-                  }
-
-                  .boton-carrito{
-                    margin-top: 5%;
-                    background-color: #007bff;
-                    color: #fff;
-                    padding: 4% 7%;
-                    border: 0.05em solid #ccc;
-                    font-size: 0.9em;
-                  }
-
-                  .boton-carrito:hover{
-                    background: #0056b3;
-                  }
-
-
-
-              }
-
-              img {
-                margin-top: 8%;
-                width: 25%;
-                margin-bottom: 8.2%;
-              }
-
-          }
-
-    }
-
-}
-
-
-/* ----------------------------------Página Sobre Servicios --------------------------------- */
-.catalogo-servicios {
-  justify-items: center;
-  display: grid;
-
-    .descripcion {
-      text-align: center;
-      margin-top: 2%;
-      max-width: 80%;
-
-          h1 {
-            color: #fff;
-            font-weight: bold;
-          }
-
-          p{
-            color: #ffffffda;
-            margin-top: 1.5%;
-            margin-bottom: 1.2%;
-            font-size: 1.1em;
-          }
-
-    }
-    
-    .card-group {
-      width: 50%;
-      justify-self: center;
-      background-color: rgba(54, 79, 100, 0.384);
-      padding: 1.2%;
-      margin-bottom: 1.2%;
-
-          .card {
-            color: #fff;
-            background-color: rgba(11, 44, 70, 0.774);
-            border: 1px solid #ccc;
-            align-items: center;
-            padding: 1%;
-
-              img {
-                margin-top: 10%;
-                width: 30%;
-                margin-bottom: 9.2%;
-              }
-
-
-              .card-body {
-                text-align: center;
-
-                  .card-title{
-                    text-align: center;
-                    font-weight: bold;
-                    margin-bottom: 15%;
-                    font-size: 1.0em;
-                  }
-
-                  .card-text{
-                    color:#ffffff71;
-                    font-size: 0.90em;
-                    text-align:justify;
-                  }
-
-                  .price{
-                    color:#007bff;
-                    font-size: 1.10em;
-                    font-weight: bolder;
-                    text-align: center;
-                  }
-
-                  .boton-carrito{
-                    margin-top: 8%;
-                    background-color: #007bff;
-                    color: #fff;
-                    padding: 4% 7%;
-                    border: 0.05em solid #ccc;
-                    font-size: 0.9em;
-                  }
-
-                  .boton-carrito:hover{
-                    background: #0056b3;
-                  }
-
-              }
-
-          }
-
-    }
-
-
-}
-
-
-/* ----------------------------------Página Sobre Contactanos --------------------------------- */
-
-.wrapper-contactanos .container{
-  margin-top: 1%;
-  margin-bottom: 1%;
-  max-width: 90%;
-}
-
-.wrapper-contactanos .row .datos{
-  display:grid;
-  justify-content: center;
-  align-items: center;
-}
-
-.wrapper-contactanos .row .datos h1{
-  color: #fff;
-  margin-bottom: 6%;
-}
-
-.wrapper-contactanos .row .datos p{
-  color: #ffffffde;
-  font-size: 1.0em;
-}
-
-
-.wrapper-contactanos .row .datos .input-group{
-  max-width: 95%;
-  margin-top: 4%;
-  margin-bottom: 4%;
-}
-
-.wrapper-contactanos .row .datos .input-group .form-control, .input-group-text{
-  background-color: #3e607ac4;
-  color: #fff;
-  font-weight: 100;
-}
-
-
-.wrapper-contactanos .enviar-datos{
-  margin-top: 5.4%;
-  margin-bottom: 5.4%;
-  justify-self: center;
-}
-
-
-.wrapper-contactanos .enviar-datos a{
-  text-decoration: none;
-  padding: 12px;
-  border: 2px solid #3e607ac4;
-  background-color: #3e607ac4;
-  color: white;
-  font-size: 1em;
-  border-radius: 5px;
-  justify-self: center;
-}
-
-.wrapper-contactanos .enviar-datos  a:hover{
-  background-color: rgba(27, 27, 27, 0.925);
-  color: white;
-  border: 2px solid rgba(27, 27, 27, 0.925);
-  transition: 0.3s all ease-in-out;
-}
-
-
-
-.wrapper-contactanos .row .mapa{
-  display: grid;
-  justify-items: center;
-  align-items: center;
-}
-
-.wrapper-contactanos .row .ubicacion{
-  width: 90%;
-  height: 90%;
-  border-radius: 0.8em;
-}
-
-
-
-
-
-
 
 /* -------------------------------------Footer--------------------------------------------- */
 
 
 .pie-pagina{
   background-color: rgb(10, 20, 29, 0.8);
-}
+
+    .container{
+      max-width: 100%;
+
+          .row{
+            padding: 30px;
+            text-align: center;
+            align-items: center;
+            width: 100%;
+
+              .logo-footer {
+                width: 100px;
+              }
 
 
-.pie-pagina .container{
-  max-width: 100%;
-}
+              h2{
+                color: #fff;
+                font-size: 20px;
+              }
+
+              p{
+                color: #efefef98;
+                margin-bottom: 10px;
+                margin-top: 20px;
+              }
 
 
-.pie-pagina .container .row{
-  padding: 30px;
-  text-align: center;
-  align-items: center;
-}
+              a{
+                text-decoration: none;
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                color: #fff;
+                margin-right: 10px;
+                margin-top: 20px;
+                background-color: #0d2033;
+                text-align: center;
+                transition: all 300ms ease;
+
+                  &:hover{
+                    color: aqua;
+                  }
+                
+              }
+              
+
+          }
+
+          #copyright{
+            color: #fff;
+            padding: 8px;
+            text-align: center;
+            background-color: rgb(10, 26, 42, 0.5);
+          }
 
 
-.pie-pagina .container .row .logo-footer{
-  width: 100px;
-}
+    }
+  
 
-.pie-pagina .container .row h2{
-  color: #fff;
-  font-size: 20px;
-}
-
-.pie-pagina .container .row p{
-  color: #efefef98;
-  margin-bottom: 10px;
-  margin-top: 20px;
-}
-
-.pie-pagina .container .row a{
-  text-decoration: none;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  color: #fff;
-  margin-right: 10px;
-  margin-top: 20px;
-  background-color: #0d2033;
-  text-align: center;
-  transition: all 300ms ease;
-}
-
-.pie-pagina .container .row a:hover{
-  color: aqua;
-}
-
-
-.pie-pagina .container .row{
-  padding: 30px;
-  text-align: center;
-  align-items: center;
-  width: 100%;
-}
-
-.pie-pagina .container #copyright{
-  color: #fff;
-  padding: 8px;
-  text-align: center;
-  background-color: rgb(10, 26, 42, 0.5);
 }
 
 

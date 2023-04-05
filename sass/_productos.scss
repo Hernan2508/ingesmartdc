@@ -1,0 +1,91 @@
+/* ----------------------------------Página Sobre Productos --------------------------------- */
+
+.catalogo-productos {
+  justify-items: center;
+  display: grid;
+
+    .descripcion {
+      text-align: center;
+      margin-top: 2%;
+      max-width: 80%;
+      
+          h1 {
+            color: #fff;
+            font-weight: bold;
+          }
+
+          p {
+            color: #ffffffda;
+            margin-top: 1.5%;
+            margin-bottom: 1.2%;
+            font-size: 1.1em;
+          }
+
+    }
+
+    .card-group {
+      background-color: rgba(54, 79, 100, 0.384);
+      padding: 1.2%;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 1.0%;
+      margin-bottom: 1.8%;
+
+          .card {
+            color: #fff;
+            background-color: rgba(11, 44, 70, 0.774);
+            border: 1px solid #ccc;
+            align-items: center;
+            padding: 1%;
+
+              .card-body {
+                text-align: center;
+
+                  .card-title{
+                    text-align: center;
+                    font-weight: bold;
+                    margin-bottom: 10%;
+                    font-size: 1.0em;
+                  }
+
+                  .card-text{
+                    color:#ffffff71;
+                    font-size: 0.90em;
+                    text-align:justify;
+                  }
+
+                  .price{
+                    color:#007bff;
+                    font-size: 1.10em;
+                    font-weight: bolder;
+                    text-align: center;
+                  }
+
+                  .boton-carrito{
+                    margin-top: 5%;
+                    background-color: #007bff;
+                    color: #fff;
+                    padding: 4% 7%;
+                    border: 0.05em solid #ccc;
+                    font-size: 0.9em;
+                  }
+
+                  .boton-carrito:hover{
+                    background: #0056b3;
+                  }
+
+
+
+              }
+
+              img {
+                margin-top: 8%;
+                width: 25%;
+                margin-bottom: 8.2%;
+              }
+
+          }
+
+    }
+
+}

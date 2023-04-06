@@ -1,4 +1,5 @@
 /* ----------------------------------Página Sobre Productos --------------------------------- */
+/* Aplicacion de Extend */
 
 .catalogo-productos {
   justify-items: center;
@@ -33,7 +34,7 @@
 
           .card {
             color: #fff;
-            background-color: rgba(11, 44, 70, 0.774);
+            background-color: $colorBackgroundCatalogo;
             border: 1px solid #ccc;
             align-items: center;
             padding: 1%;
@@ -42,7 +43,7 @@
                 text-align: center;
 
                   .card-title{
-                    text-align: center;
+                    @extend .card-body;
                     font-weight: bold;
                     margin-bottom: 10%;
                     font-size: 1.0em;
@@ -55,7 +56,7 @@
                   }
 
                   .price{
-                    color:#007bff;
+                    color:$colorFuentesCatalogo;
                     font-size: 1.10em;
                     font-weight: bolder;
                     text-align: center;
@@ -63,7 +64,7 @@
 
                   .boton-carrito{
                     margin-top: 5%;
-                    background-color: #007bff;
+                    background-color: $colorFuentesCatalogo;
                     color: #fff;
                     padding: 4% 7%;
                     border: 0.05em solid #ccc;

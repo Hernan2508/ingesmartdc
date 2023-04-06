@@ -1,8 +1,13 @@
 /* ----------------------------------Página Sobre Contactanos --------------------------------- */
 
+/* Aplicacion de Mixin */
+@mixin marginTP ($top,$bottom){
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+
 .wrapper-contactanos .container{
-  margin-top: 1%;
-  margin-bottom: 1%;
+  @include marginTP(1%,1%);
   max-width: 90%;
 
     .row .datos{
@@ -22,11 +27,10 @@
 
           .input-group{
             max-width: 95%;
-            margin-top: 4%;
-            margin-bottom: 4%;
+            @include marginTP(4%,4%);
 
               .form-control, .input-group-text{
-                background-color: #3e607ac4;
+                background-color: $colorNosotros;
                 color: #fff;
                 font-weight: 100;
               }
@@ -34,15 +38,14 @@
           }
 
           .enviar-datos{
-            margin-top: 5.4%;
-            margin-bottom: 5.4%;
+            @include marginTP(5.4%,5.4%);
             justify-self: center;
 
               a {
                 text-decoration: none;
                 padding: 12px;
-                border: 2px solid #3e607ac4;
-                background-color: #3e607ac4;
+                border: 2px solid $colorNosotros;
+                background-color: $colorNosotros;
                 color: white;
                 font-size: 1em;
                 border-radius: 5px;
